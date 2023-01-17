@@ -1,0 +1,144 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: GS;
+}
+
+.Navbar {
+  background-color: #171f4a;
+  padding: 30px 0;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 92%;
+  letter-spacing: -0.03em;
+  color: #dfe8f8;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.menu li {
+  margin-left: 40px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+.menu a:nth-child(5) {
+  margin-left: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 15px 80px;
+  color: white;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.bar {
+  display: block;
+  margin-top: 3px;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 420px) {
+  .right {
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    justify-content: center;
+    background-color: #171f4a;
+    transition: 0.7s ease;
+  }
+  .right ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .right.active {
+    left: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-5px);
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(9px);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    transform: translateX(200px);
+  }
+
+  .menu li {
+    margin-left: 0;
+    margin: 30px 0;
+  }
+  .menu a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .menu a:last-child {
+    margin-left: 0;
+    margin: 30px 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+  }
+  .Navbar .container {
+    width: 90%;
+  }
+  .Navbar .container .row {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+}

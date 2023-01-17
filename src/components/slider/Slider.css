@@ -1,0 +1,19 @@
+.slick-dots li button:before {
+  color: white;
+}
+
+@media screen and (max-width: 420px) {
+  .slick-slider .slick-arrow.slick-prev {
+    position: absolute;
+    z-index: 222;
+    left: 10px;
+  }
+  .slick-slider .slick-arrow.slick-next {
+    position: absolute;
+    z-index: 222;
+    right: 10px;
+  }
+  .slider__img {
+    outline: none;
+  }
+}

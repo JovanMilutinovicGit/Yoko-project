@@ -1,0 +1,13 @@
+.list__services__cards {
+  display: flex;
+}
+
+@media screen and (max-width: 420px) {
+  .srvc__crd {
+    flex-direction: column;
+  }
+
+  .card__in__col {
+    margin-bottom: 35px;
+  }
+}

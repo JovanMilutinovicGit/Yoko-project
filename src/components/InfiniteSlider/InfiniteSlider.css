@@ -1,0 +1,35 @@
+.slider__comapanies {
+  height: 100%;
+  position: relative;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.slide {
+  display: flex;
+  align-items: center;
+  animation: slideshow 8s linear infinite;
+  padding: 45px 0;
+  border: none;
+  background-color: #202957;
+}
+.slide img {
+  height: 25px;
+  padding: 0 30px 0 30px;
+}
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .slide {
+    padding: 20px 0;
+  }
+}

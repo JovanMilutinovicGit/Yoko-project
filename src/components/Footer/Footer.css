@@ -1,0 +1,155 @@
+input {
+  outline: none;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section ul {
+  padding-left: 0;
+}
+.footer-section li {
+  margin: 0;
+  width: 104px;
+  margin-top: 10px;
+}
+.footer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-menu {
+  display: flex;
+}
+
+.footer-menu ul {
+  margin-left: 100px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+.logo__div {
+  display: flex;
+  align-items: center;
+}
+.logo__div p {
+  font-size: 33px;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+.input__mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 328px;
+  height: 59px;
+  border-radius: 12px;
+  padding: 4px;
+  border: 2px solid #ffffff;
+}
+
+input {
+  background-color: #171f4a;
+  color: white;
+  border: none;
+  padding-left: 10px;
+  width: 54%;
+}
+
+.input__mail a {
+  border-radius: 8px;
+  background-color: #3484cc;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+}
+.social__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.social__title h6 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.social__icons {
+  display: flex;
+  align-items: center;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.icons,
+.copyright {
+  width: 50%;
+}
+.copyright h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 166%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.title-menu {
+  color: gray;
+}
+.icons img {
+  margin-right: 20px;
+}
+ul li {
+  margin-top: 10px;
+}
+.footer-menu {
+  padding: 50px;
+}
+.sub_menu {
+  margin-top: 50px;
+}
+.social__title h6 {
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .footer-container {
+    width: 90%;
+  }
+  .footer-container ul {
+    margin: 0;
+  }
+  .footer-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-section .container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
